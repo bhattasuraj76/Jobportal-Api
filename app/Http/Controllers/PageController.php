@@ -16,26 +16,35 @@ class PageController extends Controller
         $this->paginate = 5;
     }
 
-    public function home(Request $request){
+    public function home(Request $request)
+    {
         $jobs = Job::with('employer')->where('status', 1)->whereDate('expiry_date', '>', date('Y-m-d'))->orderBy('id', 'desc')->limit(9)->get();
         $jobs->map(function ($job) {
             $job->deadline = $this->getDeadlineAttribute($job->expiry_date);
             return $job;
         });
-        return response()->json(['resp'=> 1, 'hot_jobs' => $jobs]); 
+        return response()->json(['resp' => 1, 'hot_jobs' => $jobs]);
     }
 
+    public function mobileAppHome(Request $request)
+    {
+        $jobs = Job::with('employer')->where('status', 1)->whereDate('expiry_date', '>', date('Y-m-d'))->orderBy('id', 'desc')->get();
+        $jobs->map(function ($job) {
+            $job->deadline = $this->getDeadlineAttribute($job->expiry_date);
+            return $job;
+        });
+        return response()->json(['resp' => 1, 'jobs' => $jobs]);
+    }
 
     public function viewJob(Request $request, $slug)
     {
         $job = Job::with('employer')->where('slug', $slug)->where('status', 1)->first();
         $job->deadline = $this->getDeadlineAttribute($job->expiry_date);
-        if(empty($job)){
+        if (empty($job)) {
             return respose()->json(['resp' => 0, 'message' => "No job found"]);
         }
         return response()->json(['resp' => 1, 'job' => $job]);
     }
-
 
     public function applyForJob(Request $request)
     {
@@ -44,7 +53,7 @@ class PageController extends Controller
             return response()->json(['resp' => 0, 'message' => "No job found"]);
         }
 
-        if(Auth::user()->jobs()->where('job_id', $job->id)->exists()){
+        if (Auth::user()->jobs()->where('job_id', $job->id)->exists()) {
             return response()->json(['resp' => 0, 'message' => "You have already applied to this job."]);
         }
 
@@ -55,13 +64,16 @@ class PageController extends Controller
 
     public function filterJobs(Request $request)
     {
-        $query= Job::with('employer')->where('status', 1)->whereDate('expiry_date', '>', date('Y-m-d'));
-        if($request->has('keyword') && !empty(trim($request->keyword))){
-            $query->where('title', 'like', '%'. $request->keyword.'%');
+        $query = Job::with('employer')->where('status', 1)->whereDate('expiry_date', '>', date('Y-m-d'));
+
+        if ($request->has('keyword') && !empty(trim($request->keyword))) {
+            $query->where('title', 'like', '%' . $request->keyword . '%');
         }
-        if ( $request->has('category') && !empty($request->category)) {
+
+        if ($request->has('category') && !empty($request->category)) {
             $query->whereIn('category', $request->category);
         }
+
         if ($request->has('type') && !empty($request->type)) {
             $query->whereIn('type', $request->type);
         }
@@ -70,7 +82,10 @@ class PageController extends Controller
             $query->whereIn('level', $request->level);
         }
 
-        $jobs = $query->orderBy('id', 'desc')->paginate($this->paginate);
+        $query->orderBy('id', 'desc');
+       
+        //paginate only for web not for mobile
+        $jobs = $request->is('*/mobile-search') ? $query->get() : $query->paginate($this->paginate) ;
 
         $jobs->map(function ($job) {
             $job->deadline = $this->getDeadlineAttribute($job->expiry_date);

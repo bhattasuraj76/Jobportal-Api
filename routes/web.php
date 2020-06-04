@@ -19,11 +19,10 @@ $router->get('/', function () use ($router) {
 
 $router->group(['prefix' => 'api'], function ($router) {
     //auth routes
-    $router->post('/register', 'AuthController@register');
+    $router->post('/userRegister', 'AuthController@register');
     $router->post('/login', 'AuthController@authenticate');
     $router->post('/logout', 'AuthController@logout');
     $router->post('/change-password', 'AuthController@changePassword');
-
 
     //employer routes
     $router->get('/employer', 'EmployerController@index');
@@ -42,7 +41,9 @@ $router->group(['prefix' => 'api'], function ($router) {
 
     // page routes
     $router->get('/home', 'PageController@home');
+    $router->get('/mobile-app-home', 'PageController@mobileAppHome');
     $router->post('/apply-for-job', 'PageController@applyForJob');
     $router->get('/job/{slug}', 'PageController@viewJob');
     $router->post('/search', 'PageController@filterJobs');
+    $router->post('/mobile-search', 'PageController@filterJobs');
 });

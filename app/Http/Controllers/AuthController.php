@@ -12,89 +12,107 @@ use Auth;
 
 class AuthController extends Controller
 {
+    const USER_ENTITIES = ['jobseeker', 'employer'];
 
     public function __construct()
     {
-        // $this->middleware('auth')->only(['changePassword']);
+        // $this->middleware('auth')->only('changePassword');
     }
 
     public function authenticate(Request $request)
     {
+        //return if request no entity or not one of defined entities;
+        if (!$this->checkRequestHasUserEntity($request)) return response()->json(['resp' => 0, 'message' => 'Failed to login']);
+
+        //validate input
         $this->validate($request, [
             'email' => 'required',
             'password' => 'required'
         ]);
-        // return $request->all();
-        if ($request->entity == "jobseeker") {
-            $user = Jobseeker::where('email', $request->input('email'))->first();
-            if (empty($user)) {
-                return response()->json(['resp' => 0, 'message' => 'Invalid email or password'], 401);
-            }
 
-            if (Hash::check($request->input('password'), $user->password)) {
+        try {
+            $user = $request->entity == "jobseeker" ?
+                $user = Jobseeker::where('email', $request->input('email'))->first() : Employer::where('email', $request->input('email'))->first();
+
+            //validate user credentials
+            if ($user && $this->checkPasswordMatch($request->input('password'), $user)) {
                 //generate unique api key an update record
                 $apikey = base64_encode(Str::random(40));
-                Jobseeker::where('email', $request->input('email'))->update(['api_key' => $apikey]);
-                //return token and user 
-                return response()->json(['resp' => 1, 'user' => ['email' => $user->email, 'entity' => "jobseeker", 'token' => $apikey]]);
-            } else {
-                return response()->json(['resp' => 0, 'message' => 'Invalid email or password'], 401);
-            }
-        }
+                $user->update(['api_key' => $apikey]);
 
-        if ($request->entity ==  "employer") {
-            $user = Employer::where('email', $request->input('email'))->first();
-            if (empty($user)) {
-                return response()->json(['resp' => 0, 'message' => 'Invalid email or password'], 401);
+                //return token and user 
+                $authUser = [
+                    'email' => $user->email,
+                    'entity' => $request->entity,
+                    'token' => $apikey,
+                    // "name" => $user->name,
+                    // "profile" => $user->profile ? $user->profile : ""
+                ];
+                return response()->json(['resp' => 1, 'user' => $authUser]);
             }
 
-            if (Hash::check($request->input('password'), $user->password)) {
-                //generate unique api key an update record
-                $apikey = base64_encode(Str::random(40));
-                Employer::where('email', $request->input('email'))->update(['api_key' => $apikey]);
-                //return token and user 
-                return response()->json(['resp' => 1, 'user' => ['email' => $user->email, 'entity' => "employer", 'token' => $apikey]]);
-            } else {
-                return response()->json(['resp' => 0, 'message' => 'Invalid email or password'], 401);
-            }
+            throw new \Exception('Invalid email or password');
+        } catch (\Exception $e) {
+            return response()->json(['resp' => 0, 'message' => 'Invalid email or password'], 401);
         }
     }
 
 
     public function register(Request $request)
     {
+        //return if request no entity or not one of defined entities;
+        if (!$this->checkRequestHasUserEntity($request)) return response()->json(['resp' => 0, 'message' => 'Failed to register']);
+
+        //validate input
+        $table = $request->input('entity') == "employer" ? 'employers' : 'jobseekers';
         $this->validate($request, [
-            'email' => 'required|unique:employers',
-            'password' => 'required|same:password',
-            'password_confirmation' => 'same:password'
+            'email' => 'required|unique:' . $table,
+            'password' => 'required',
+            'password_confirmation' => 'required|same:password'
         ]);
 
-        $attributes = [
-            'first_name'     => $request->first_name,
-            'last_name'     => $request->last_name,
-            'name'     => $request->name,
-            'email'    => $request->email,
-            'password' => Hash::make($request->password)
-        ];
+        try {
+            $attributes = [
+                'first_name' => $request->has('first_name') ? $request->first_name : "",
+                'last_name'  => $request->has('last_name') ? $request->last_name : "",
+                'name'     =>  $request->has('name') ? $request->name : "",
+                'email'    =>  $request->email,
+                'password' => Hash::make($request->password)
+            ];
 
-        // return $request->all();
-        if ($request->entity == "jobseeker") {
-            if (Jobseeker::create($attributes)) {
-                return response()->json(['resp' => 1]);
-            } else {
-                return response()->json(['resp' => 0]);
-            }
-        }
+            if ($request->entity == "jobseeker")
+                Jobseeker::create($attributes);
+            else
+                Employer::create($attributes);
 
-        if ($request->entity ==  "employer") {
-            if (Employer::create($attributes)) {
-                return response()->json(['resp' => 1]);
-            } else {
-                return response()->json(['resp' => 0]);
-            }
+            return response()->json(['resp' => 1, 'message' => 'User registered successfully']);
+        } catch (\Exception $e) {
+            return response()->json(['resp' => 0, 'message' => 'Failed to register user']);
         }
     }
 
+
+    public function changePassword(Request $request)
+    {
+        //validate input
+        $this->validate($request, [
+            'old_password'     => 'required',
+            'password'     => 'required|min:6',
+            'password_confirmation' => 'required|same:password',
+        ]);
+
+        //validate user password
+        if (!$this->checkPasswordMatch($request->input('old_password'), Auth::user())) {
+            return response()->json(['old_password' => 'Old password did not match'], 422);
+        }
+
+        try {
+            Auth::user()->update(['password' => Hash::make($request->password)]);
+            return response()->json(['resp' => 1, 'message' => 'Successfully changed user password']);
+        } catch (\Exception $e) {
+            return response()->json(['resp' => 0, 'message' => 'Failed to change user password']);
+        }
+    }
 
     public function logout(Request $request)
     {
@@ -102,21 +120,13 @@ class AuthController extends Controller
         return response()->json(['resp' => 1]);
     }
 
-    public function changePassword(Request $request)
+    public function checkPasswordMatch($password, $user)
     {
-        $this->validate($request, [
-            'old_password'     => 'required',
-            'password'     => 'required|min:6',
-            'password_confirmation' => 'required|same:password',
-        ]);
+        return Hash::check($password, $user->password);
+    }
 
-        if (!Hash::check($request->old_password, Auth::user()->password)) {
-            return response()->json(['old_password' => 'Old password did not match'], 422);
-        } else {
-            Auth::user()->update(['password' => Hash::make($request->password)]);
-            return response()->json(['resp' => 1]);
-        }
-        
-        return response()->json(['resp' => 0]);
+    public function checkRequestHasUserEntity($request)
+    {
+        return $request->has('entity') && in_array($request->entity, self::USER_ENTITIES);
     }
 }
