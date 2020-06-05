@@ -45,8 +45,8 @@ class AuthController extends Controller
                     'email' => $user->email,
                     'entity' => $request->entity,
                     'token' => $apikey,
-                    // "name" => $user->name,
-                    // "profile" => $user->profile ? $user->profile : ""
+                    "name" => $user->name,
+                    "profile" => $user->profile ? $user->profile : ""
                 ];
                 return response()->json(['resp' => 1, 'user' => $authUser]);
             }

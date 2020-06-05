@@ -36,8 +36,9 @@ $router->group(['prefix' => 'api'], function ($router) {
 
     //jobseeker routes
     $router->get('/jobseeker', 'JobseekerController@index');
-    $router->get('jobseeker/edit-profile', 'JobseekerController@show');
+    $router->get('/jobseeker/edit-profile', 'JobseekerController@show');
     $router->post('/jobseeker/edit-profile', 'JobseekerController@update');
+    $router->post('/downloadCV', 'JobseekerController@downloadCV');
 
     // page routes
     $router->get('/home', 'PageController@home');
@@ -46,4 +47,5 @@ $router->group(['prefix' => 'api'], function ($router) {
     $router->get('/job/{slug}', 'PageController@viewJob');
     $router->post('/search', 'PageController@filterJobs');
     $router->post('/mobile-search', 'PageController@filterJobs');
+    
 });

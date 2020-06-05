@@ -39,9 +39,9 @@ class Authenticate
             return response()->json(['error' => 'Unauthorized'], 401);
         }
 
-        if (!$request->expectsJson()) {
-            return response()->json(['error' => 'Request Failed'], 401);
-        }
+        // if (!$request->expectsJson()) {
+        //     return response()->json(['error' => 'Request Failed'], 401);
+        // }
 
         return $next($request);
     }

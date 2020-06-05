@@ -21,15 +21,20 @@ class Jobseeker extends Model implements Authenticatable
         return $this->belongsToMany('App\Models\Job', 'jobseeker_jobs');
     }
 
+    public function getRawcvAttribute()
+    {
+        return $this->attributes['cv'];
+    }
+
     public function getCvAttribute($value)
     {
-        $path = $value ? url('public/images/jobseeker/') . "/" . $value : null;
+        $path = $value ? url('public/jobseeker/cv') . "/" . $value : null;
         return $path;
     }
 
     public function getProfileAttribute($value)
     {
-        $path = $value ? url('public/images/jobseeker/') . "/" . $value : null;
+        $path = $value ? url('public/jobseeker/images') . "/" . $value : null;
         return $path;
     }
 
