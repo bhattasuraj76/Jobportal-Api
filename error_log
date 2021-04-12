@@ -1,0 +1,553 @@
+[06-May-2020 10:37:58 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Symfony\Component\HttpFoundation\Response::setStatusCode() must be an instance of Symfony\Component\HttpFoundation\object, instance of Illuminate\Http\Response returned in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php:453
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/illuminate/http/Response.php(35): Symfony\Component\HttpFoundation\Response->setStatusCode(500)
+#1 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(168): Illuminate\Http\Response->__construct('<!-- Return val...', 500)
+#2 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(116): Laravel\Lumen\Exceptions\Handler->prepareResponse(Object(Laravel\Lumen\Http\Request), Object(TypeError))
+#3 /home1/wwwverte/jpapi.vertexwebsurf.com/app/Exceptions/Handler.php(52): Laravel\Lumen\Exceptions\Handler->render(Object(Laravel\Lumen\Http\Request), Object(TypeError))
+#4 /home1/wwwv in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php on line 453
+[06-May-2020 10:37:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Laravel\Lumen\Application::handleException() in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php:67
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(55): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}
+  thrown in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php on line 67
+[06-May-2020 10:37:59 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Symfony\Component\HttpFoundation\Response::setStatusCode() must be an instance of Symfony\Component\HttpFoundation\object, instance of Illuminate\Http\Response returned in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php:453
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/illuminate/http/Response.php(35): Symfony\Component\HttpFoundation\Response->setStatusCode(500)
+#1 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(168): Illuminate\Http\Response->__construct('<!-- Return val...', 500)
+#2 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(116): Laravel\Lumen\Exceptions\Handler->prepareResponse(Object(Laravel\Lumen\Http\Request), Object(TypeError))
+#3 /home1/wwwverte/jpapi.vertexwebsurf.com/app/Exceptions/Handler.php(52): Laravel\Lumen\Exceptions\Handler->render(Object(Laravel\Lumen\Http\Request), Object(TypeError))
+#4 /home1/wwwv in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php on line 453
+[06-May-2020 10:37:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Laravel\Lumen\Application::handleException() in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php:67
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(55): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}
+  thrown in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php on line 67
+[06-May-2020 10:38:23 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Symfony\Component\HttpFoundation\Response::setStatusCode() must be an instance of Symfony\Component\HttpFoundation\object, instance of Illuminate\Http\Response returned in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php:453
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/illuminate/http/Response.php(35): Symfony\Component\HttpFoundation\Response->setStatusCode(500)
+#1 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(168): Illuminate\Http\Response->__construct('<!-- Return val...', 500)
+#2 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(116): Laravel\Lumen\Exceptions\Handler->prepareResponse(Object(Laravel\Lumen\Http\Request), Object(TypeError))
+#3 /home1/wwwverte/jpapi.vertexwebsurf.com/app/Exceptions/Handler.php(52): Laravel\Lumen\Exceptions\Handler->render(Object(Laravel\Lumen\Http\Request), Object(TypeError))
+#4 /home1/wwwv in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php on line 453
+[06-May-2020 10:38:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Laravel\Lumen\Application::handleException() in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php:67
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(55): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}
+  thrown in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php on line 67
+[06-May-2020 10:38:23 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Symfony\Component\HttpFoundation\Response::setStatusCode() must be an instance of Symfony\Component\HttpFoundation\object, instance of Illuminate\Http\Response returned in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php:453
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/illuminate/http/Response.php(35): Symfony\Component\HttpFoundation\Response->setStatusCode(500)
+#1 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(168): Illuminate\Http\Response->__construct('<!-- Return val...', 500)
+#2 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(116): Laravel\Lumen\Exceptions\Handler->prepareResponse(Object(Laravel\Lumen\Http\Request), Object(TypeError))
+#3 /home1/wwwverte/jpapi.vertexwebsurf.com/app/Exceptions/Handler.php(52): Laravel\Lumen\Exceptions\Handler->render(Object(Laravel\Lumen\Http\Request), Object(TypeError))
+#4 /home1/wwwv in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php on line 453
+[06-May-2020 10:38:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Laravel\Lumen\Application::handleException() in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php:67
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(55): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}
+  thrown in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php on line 67
+[06-May-2020 10:38:53 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Symfony\Component\HttpFoundation\Response::setStatusCode() must be an instance of Symfony\Component\HttpFoundation\object, instance of Illuminate\Http\Response returned in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php:453
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/illuminate/http/Response.php(35): Symfony\Component\HttpFoundation\Response->setStatusCode(500)
+#1 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(168): Illuminate\Http\Response->__construct('<!-- Return val...', 500)
+#2 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(116): Laravel\Lumen\Exceptions\Handler->prepareResponse(Object(Laravel\Lumen\Http\Request), Object(TypeError))
+#3 /home1/wwwverte/jpapi.vertexwebsurf.com/app/Exceptions/Handler.php(52): Laravel\Lumen\Exceptions\Handler->render(Object(Laravel\Lumen\Http\Request), Object(TypeError))
+#4 /home1/wwwv in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php on line 453
+[06-May-2020 10:38:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Laravel\Lumen\Application::handleException() in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php:67
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(55): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}
+  thrown in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php on line 67
+[06-May-2020 10:38:54 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Symfony\Component\HttpFoundation\Response::setStatusCode() must be an instance of Symfony\Component\HttpFoundation\object, instance of Illuminate\Http\Response returned in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php:453
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/illuminate/http/Response.php(35): Symfony\Component\HttpFoundation\Response->setStatusCode(500)
+#1 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(168): Illuminate\Http\Response->__construct('<!-- Return val...', 500)
+#2 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(116): Laravel\Lumen\Exceptions\Handler->prepareResponse(Object(Laravel\Lumen\Http\Request), Object(TypeError))
+#3 /home1/wwwverte/jpapi.vertexwebsurf.com/app/Exceptions/Handler.php(52): Laravel\Lumen\Exceptions\Handler->render(Object(Laravel\Lumen\Http\Request), Object(TypeError))
+#4 /home1/wwwv in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php on line 453
+[06-May-2020 10:38:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Laravel\Lumen\Application::handleException() in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php:67
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(55): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}
+  thrown in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php on line 67
+[06-May-2020 10:39:02 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Symfony\Component\HttpFoundation\Response::setStatusCode() must be an instance of Symfony\Component\HttpFoundation\object, instance of Illuminate\Http\Response returned in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php:453
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/illuminate/http/Response.php(35): Symfony\Component\HttpFoundation\Response->setStatusCode(500)
+#1 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(168): Illuminate\Http\Response->__construct('<!-- Return val...', 500)
+#2 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(116): Laravel\Lumen\Exceptions\Handler->prepareResponse(Object(Laravel\Lumen\Http\Request), Object(TypeError))
+#3 /home1/wwwverte/jpapi.vertexwebsurf.com/app/Exceptions/Handler.php(52): Laravel\Lumen\Exceptions\Handler->render(Object(Laravel\Lumen\Http\Request), Object(TypeError))
+#4 /home1/wwwv in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php on line 453
+[06-May-2020 10:39:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Laravel\Lumen\Application::handleException() in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php:67
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(55): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}
+  thrown in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php on line 67
+[06-May-2020 10:39:03 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Symfony\Component\HttpFoundation\Response::setStatusCode() must be an instance of Symfony\Component\HttpFoundation\object, instance of Illuminate\Http\Response returned in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php:453
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/illuminate/http/Response.php(35): Symfony\Component\HttpFoundation\Response->setStatusCode(500)
+#1 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(168): Illuminate\Http\Response->__construct('<!-- Return val...', 500)
+#2 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(116): Laravel\Lumen\Exceptions\Handler->prepareResponse(Object(Laravel\Lumen\Http\Request), Object(TypeError))
+#3 /home1/wwwverte/jpapi.vertexwebsurf.com/app/Exceptions/Handler.php(52): Laravel\Lumen\Exceptions\Handler->render(Object(Laravel\Lumen\Http\Request), Object(TypeError))
+#4 /home1/wwwv in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php on line 453
+[06-May-2020 10:39:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Laravel\Lumen\Application::handleException() in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php:67
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(55): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}
+  thrown in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php on line 67
+[06-May-2020 10:39:32 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Symfony\Component\HttpFoundation\Response::setStatusCode() must be an instance of Symfony\Component\HttpFoundation\object, instance of Illuminate\Http\JsonResponse returned in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php:453
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php(201): Symfony\Component\HttpFoundation\Response->setStatusCode(500)
+#1 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/JsonResponse.php(44): Symfony\Component\HttpFoundation\Response->__construct('', 500, Array)
+#2 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/illuminate/http/JsonResponse.php(31): Symfony\Component\HttpFoundation\JsonResponse->__construct(Array, 500, Array)
+#3 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(132): Illuminate\Http\JsonResponse->__construct(Array, 500, Array, 192)
+#4 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/ in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php on line 453
+[06-May-2020 10:39:32 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Laravel\Lumen\Application::handleException() in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php:67
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(55): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}
+  thrown in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php on line 67
+[06-May-2020 10:40:25 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Symfony\Component\HttpFoundation\Response::setStatusCode() must be an instance of Symfony\Component\HttpFoundation\object, instance of Illuminate\Http\Response returned in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php:453
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/illuminate/http/Response.php(35): Symfony\Component\HttpFoundation\Response->setStatusCode(500)
+#1 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(168): Illuminate\Http\Response->__construct('<!-- Return val...', 500)
+#2 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(116): Laravel\Lumen\Exceptions\Handler->prepareResponse(Object(Laravel\Lumen\Http\Request), Object(TypeError))
+#3 /home1/wwwverte/jpapi.vertexwebsurf.com/app/Exceptions/Handler.php(52): Laravel\Lumen\Exceptions\Handler->render(Object(Laravel\Lumen\Http\Request), Object(TypeError))
+#4 /home1/wwwv in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php on line 453
+[06-May-2020 10:40:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Laravel\Lumen\Application::handleException() in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php:67
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(55): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}
+  thrown in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php on line 67
+[06-May-2020 10:40:25 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Symfony\Component\HttpFoundation\Response::setStatusCode() must be an instance of Symfony\Component\HttpFoundation\object, instance of Illuminate\Http\Response returned in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php:453
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/illuminate/http/Response.php(35): Symfony\Component\HttpFoundation\Response->setStatusCode(500)
+#1 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(168): Illuminate\Http\Response->__construct('<!-- Return val...', 500)
+#2 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(116): Laravel\Lumen\Exceptions\Handler->prepareResponse(Object(Laravel\Lumen\Http\Request), Object(TypeError))
+#3 /home1/wwwverte/jpapi.vertexwebsurf.com/app/Exceptions/Handler.php(52): Laravel\Lumen\Exceptions\Handler->render(Object(Laravel\Lumen\Http\Request), Object(TypeError))
+#4 /home1/wwwv in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php on line 453
+[06-May-2020 10:40:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Laravel\Lumen\Application::handleException() in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php:67
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(55): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}
+  thrown in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php on line 67
+[06-May-2020 10:41:06 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Symfony\Component\HttpFoundation\Response::setStatusCode() must be an instance of Symfony\Component\HttpFoundation\object, instance of Illuminate\Http\JsonResponse returned in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php:453
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php(201): Symfony\Component\HttpFoundation\Response->setStatusCode(500)
+#1 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/JsonResponse.php(44): Symfony\Component\HttpFoundation\Response->__construct('', 500, Array)
+#2 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/illuminate/http/JsonResponse.php(31): Symfony\Component\HttpFoundation\JsonResponse->__construct(Array, 500, Array)
+#3 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(132): Illuminate\Http\JsonResponse->__construct(Array, 500, Array, 192)
+#4 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/ in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php on line 453
+[06-May-2020 10:41:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Laravel\Lumen\Application::handleException() in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php:67
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(55): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}
+  thrown in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php on line 67
+[06-May-2020 10:41:10 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Symfony\Component\HttpFoundation\Response::setStatusCode() must be an instance of Symfony\Component\HttpFoundation\object, instance of Illuminate\Http\JsonResponse returned in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php:453
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php(201): Symfony\Component\HttpFoundation\Response->setStatusCode(500)
+#1 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/JsonResponse.php(44): Symfony\Component\HttpFoundation\Response->__construct('', 500, Array)
+#2 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/illuminate/http/JsonResponse.php(31): Symfony\Component\HttpFoundation\JsonResponse->__construct(Array, 500, Array)
+#3 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(132): Illuminate\Http\JsonResponse->__construct(Array, 500, Array, 192)
+#4 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/ in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php on line 453
+[06-May-2020 10:41:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Laravel\Lumen\Application::handleException() in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php:67
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(55): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}
+  thrown in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php on line 67
+[06-May-2020 10:41:16 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Symfony\Component\HttpFoundation\Response::setStatusCode() must be an instance of Symfony\Component\HttpFoundation\object, instance of Illuminate\Http\JsonResponse returned in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php:453
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php(201): Symfony\Component\HttpFoundation\Response->setStatusCode(500)
+#1 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/JsonResponse.php(44): Symfony\Component\HttpFoundation\Response->__construct('', 500, Array)
+#2 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/illuminate/http/JsonResponse.php(31): Symfony\Component\HttpFoundation\JsonResponse->__construct(Array, 500, Array)
+#3 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(132): Illuminate\Http\JsonResponse->__construct(Array, 500, Array, 192)
+#4 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/ in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php on line 453
+[06-May-2020 10:41:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Laravel\Lumen\Application::handleException() in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php:67
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(55): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}
+  thrown in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php on line 67
+[06-May-2020 10:49:05 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Symfony\Component\HttpFoundation\Response::setStatusCode() must be an instance of Symfony\Component\HttpFoundation\object, instance of Illuminate\Http\JsonResponse returned in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php:453
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php(201): Symfony\Component\HttpFoundation\Response->setStatusCode(500)
+#1 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/JsonResponse.php(44): Symfony\Component\HttpFoundation\Response->__construct('', 500, Array)
+#2 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/illuminate/http/JsonResponse.php(31): Symfony\Component\HttpFoundation\JsonResponse->__construct(Array, 500, Array)
+#3 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(132): Illuminate\Http\JsonResponse->__construct(Array, 500, Array, 192)
+#4 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/ in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php on line 453
+[06-May-2020 10:49:05 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Laravel\Lumen\Application::handleException() in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php:67
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(55): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}
+  thrown in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php on line 67
+[06-May-2020 10:49:41 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Symfony\Component\HttpFoundation\Response::setStatusCode() must be an instance of Symfony\Component\HttpFoundation\object, instance of Illuminate\Http\JsonResponse returned in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php:453
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php(201): Symfony\Component\HttpFoundation\Response->setStatusCode(500)
+#1 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/JsonResponse.php(44): Symfony\Component\HttpFoundation\Response->__construct('', 500, Array)
+#2 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/illuminate/http/JsonResponse.php(31): Symfony\Component\HttpFoundation\JsonResponse->__construct(Array, 500, Array)
+#3 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(132): Illuminate\Http\JsonResponse->__construct(Array, 500, Array, 192)
+#4 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/ in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php on line 453
+[06-May-2020 10:49:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Laravel\Lumen\Application::handleException() in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php:67
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(55): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}
+  thrown in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php on line 67
+[06-May-2020 10:49:47 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Symfony\Component\HttpFoundation\Response::setStatusCode() must be an instance of Symfony\Component\HttpFoundation\object, instance of Illuminate\Http\JsonResponse returned in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php:453
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php(201): Symfony\Component\HttpFoundation\Response->setStatusCode(500)
+#1 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/JsonResponse.php(44): Symfony\Component\HttpFoundation\Response->__construct('', 500, Array)
+#2 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/illuminate/http/JsonResponse.php(31): Symfony\Component\HttpFoundation\JsonResponse->__construct(Array, 500, Array)
+#3 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(132): Illuminate\Http\JsonResponse->__construct(Array, 500, Array, 192)
+#4 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/ in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php on line 453
+[06-May-2020 10:49:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Laravel\Lumen\Application::handleException() in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php:67
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(55): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}
+  thrown in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php on line 67
+[06-May-2020 10:50:15 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Symfony\Component\HttpFoundation\Response::setStatusCode() must be an instance of Symfony\Component\HttpFoundation\object, instance of Illuminate\Http\JsonResponse returned in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php:453
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php(201): Symfony\Component\HttpFoundation\Response->setStatusCode(500)
+#1 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/JsonResponse.php(44): Symfony\Component\HttpFoundation\Response->__construct('', 500, Array)
+#2 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/illuminate/http/JsonResponse.php(31): Symfony\Component\HttpFoundation\JsonResponse->__construct(Array, 500, Array)
+#3 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(132): Illuminate\Http\JsonResponse->__construct(Array, 500, Array, 192)
+#4 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/ in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php on line 453
+[06-May-2020 10:50:15 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Laravel\Lumen\Application::handleException() in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php:67
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(55): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}
+  thrown in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php on line 67
+[06-May-2020 10:50:54 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Symfony\Component\HttpFoundation\Response::setStatusCode() must be an instance of Symfony\Component\HttpFoundation\object, instance of Illuminate\Http\JsonResponse returned in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php:453
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php(201): Symfony\Component\HttpFoundation\Response->setStatusCode(500)
+#1 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/JsonResponse.php(44): Symfony\Component\HttpFoundation\Response->__construct('', 500, Array)
+#2 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/illuminate/http/JsonResponse.php(31): Symfony\Component\HttpFoundation\JsonResponse->__construct(Array, 500, Array)
+#3 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(132): Illuminate\Http\JsonResponse->__construct(Array, 500, Array, 192)
+#4 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/ in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php on line 453
+[06-May-2020 10:50:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Laravel\Lumen\Application::handleException() in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php:67
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(55): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}
+  thrown in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php on line 67
+[06-May-2020 10:51:27 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Symfony\Component\HttpFoundation\Response::setStatusCode() must be an instance of Symfony\Component\HttpFoundation\object, instance of Illuminate\Http\JsonResponse returned in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php:453
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php(201): Symfony\Component\HttpFoundation\Response->setStatusCode(500)
+#1 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/JsonResponse.php(44): Symfony\Component\HttpFoundation\Response->__construct('', 500, Array)
+#2 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/illuminate/http/JsonResponse.php(31): Symfony\Component\HttpFoundation\JsonResponse->__construct(Array, 500, Array)
+#3 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(132): Illuminate\Http\JsonResponse->__construct(Array, 500, Array, 192)
+#4 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/ in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php on line 453
+[06-May-2020 10:51:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Laravel\Lumen\Application::handleException() in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php:67
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(55): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}
+  thrown in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php on line 67
+[06-May-2020 10:51:41 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Symfony\Component\HttpFoundation\Response::setStatusCode() must be an instance of Symfony\Component\HttpFoundation\object, instance of Illuminate\Http\JsonResponse returned in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php:453
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php(201): Symfony\Component\HttpFoundation\Response->setStatusCode(500)
+#1 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/JsonResponse.php(44): Symfony\Component\HttpFoundation\Response->__construct('', 500, Array)
+#2 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/illuminate/http/JsonResponse.php(31): Symfony\Component\HttpFoundation\JsonResponse->__construct(Array, 500, Array)
+#3 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(132): Illuminate\Http\JsonResponse->__construct(Array, 500, Array, 192)
+#4 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/ in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php on line 453
+[06-May-2020 10:51:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Laravel\Lumen\Application::handleException() in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php:67
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(55): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}
+  thrown in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php on line 67
+[06-May-2020 10:51:51 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Symfony\Component\HttpFoundation\Response::setStatusCode() must be an instance of Symfony\Component\HttpFoundation\object, instance of Illuminate\Http\JsonResponse returned in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php:453
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php(201): Symfony\Component\HttpFoundation\Response->setStatusCode(500)
+#1 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/JsonResponse.php(44): Symfony\Component\HttpFoundation\Response->__construct('', 500, Array)
+#2 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/illuminate/http/JsonResponse.php(31): Symfony\Component\HttpFoundation\JsonResponse->__construct(Array, 500, Array)
+#3 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(132): Illuminate\Http\JsonResponse->__construct(Array, 500, Array, 192)
+#4 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/ in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php on line 453
+[06-May-2020 10:51:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Laravel\Lumen\Application::handleException() in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php:67
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(55): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}
+  thrown in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php on line 67
+[06-May-2020 10:52:02 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Symfony\Component\HttpFoundation\Response::setStatusCode() must be an instance of Symfony\Component\HttpFoundation\object, instance of Illuminate\Http\JsonResponse returned in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php:453
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php(201): Symfony\Component\HttpFoundation\Response->setStatusCode(500)
+#1 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/JsonResponse.php(44): Symfony\Component\HttpFoundation\Response->__construct('', 500, Array)
+#2 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/illuminate/http/JsonResponse.php(31): Symfony\Component\HttpFoundation\JsonResponse->__construct(Array, 500, Array)
+#3 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(132): Illuminate\Http\JsonResponse->__construct(Array, 500, Array, 192)
+#4 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/ in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php on line 453
+[06-May-2020 10:52:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Laravel\Lumen\Application::handleException() in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php:67
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(55): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}
+  thrown in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php on line 67
+[06-May-2020 10:52:12 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Symfony\Component\HttpFoundation\Response::setStatusCode() must be an instance of Symfony\Component\HttpFoundation\object, instance of Illuminate\Http\JsonResponse returned in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php:453
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php(201): Symfony\Component\HttpFoundation\Response->setStatusCode(500)
+#1 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/JsonResponse.php(44): Symfony\Component\HttpFoundation\Response->__construct('', 500, Array)
+#2 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/illuminate/http/JsonResponse.php(31): Symfony\Component\HttpFoundation\JsonResponse->__construct(Array, 500, Array)
+#3 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(132): Illuminate\Http\JsonResponse->__construct(Array, 500, Array, 192)
+#4 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/ in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php on line 453
+[06-May-2020 10:52:12 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Laravel\Lumen\Application::handleException() in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php:67
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(55): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}
+  thrown in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php on line 67
+[06-May-2020 10:52:16 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Symfony\Component\HttpFoundation\Response::setStatusCode() must be an instance of Symfony\Component\HttpFoundation\object, instance of Illuminate\Http\JsonResponse returned in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php:453
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php(201): Symfony\Component\HttpFoundation\Response->setStatusCode(500)
+#1 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/JsonResponse.php(44): Symfony\Component\HttpFoundation\Response->__construct('', 500, Array)
+#2 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/illuminate/http/JsonResponse.php(31): Symfony\Component\HttpFoundation\JsonResponse->__construct(Array, 500, Array)
+#3 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(132): Illuminate\Http\JsonResponse->__construct(Array, 500, Array, 192)
+#4 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/ in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php on line 453
+[06-May-2020 10:52:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Laravel\Lumen\Application::handleException() in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php:67
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(55): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}
+  thrown in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php on line 67
+[06-May-2020 10:52:18 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Symfony\Component\HttpFoundation\Response::setStatusCode() must be an instance of Symfony\Component\HttpFoundation\object, instance of Illuminate\Http\JsonResponse returned in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php:453
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php(201): Symfony\Component\HttpFoundation\Response->setStatusCode(500)
+#1 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/JsonResponse.php(44): Symfony\Component\HttpFoundation\Response->__construct('', 500, Array)
+#2 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/illuminate/http/JsonResponse.php(31): Symfony\Component\HttpFoundation\JsonResponse->__construct(Array, 500, Array)
+#3 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(132): Illuminate\Http\JsonResponse->__construct(Array, 500, Array, 192)
+#4 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/ in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php on line 453
+[06-May-2020 10:52:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Laravel\Lumen\Application::handleException() in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php:67
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(55): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}
+  thrown in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php on line 67
+[06-May-2020 10:53:27 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Symfony\Component\HttpFoundation\Response::setStatusCode() must be an instance of Symfony\Component\HttpFoundation\object, instance of Illuminate\Http\Response returned in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php:453
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/illuminate/http/Response.php(35): Symfony\Component\HttpFoundation\Response->setStatusCode(500)
+#1 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(168): Illuminate\Http\Response->__construct('<!-- Return val...', 500)
+#2 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(116): Laravel\Lumen\Exceptions\Handler->prepareResponse(Object(Laravel\Lumen\Http\Request), Object(TypeError))
+#3 /home1/wwwverte/jpapi.vertexwebsurf.com/app/Exceptions/Handler.php(52): Laravel\Lumen\Exceptions\Handler->render(Object(Laravel\Lumen\Http\Request), Object(TypeError))
+#4 /home1/wwwv in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php on line 453
+[06-May-2020 10:53:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Laravel\Lumen\Application::handleException() in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php:67
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(55): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}
+  thrown in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php on line 67
+[06-May-2020 10:53:27 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Symfony\Component\HttpFoundation\Response::setStatusCode() must be an instance of Symfony\Component\HttpFoundation\object, instance of Illuminate\Http\Response returned in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php:453
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/illuminate/http/Response.php(35): Symfony\Component\HttpFoundation\Response->setStatusCode(500)
+#1 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(168): Illuminate\Http\Response->__construct('<!-- Return val...', 500)
+#2 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(116): Laravel\Lumen\Exceptions\Handler->prepareResponse(Object(Laravel\Lumen\Http\Request), Object(TypeError))
+#3 /home1/wwwverte/jpapi.vertexwebsurf.com/app/Exceptions/Handler.php(52): Laravel\Lumen\Exceptions\Handler->render(Object(Laravel\Lumen\Http\Request), Object(TypeError))
+#4 /home1/wwwv in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php on line 453
+[06-May-2020 10:53:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Laravel\Lumen\Application::handleException() in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php:67
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(55): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}
+  thrown in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php on line 67
+[06-May-2020 11:00:40 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Symfony\Component\HttpFoundation\Response::setStatusCode() must be an instance of Symfony\Component\HttpFoundation\object, instance of Illuminate\Http\JsonResponse returned in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php:453
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php(201): Symfony\Component\HttpFoundation\Response->setStatusCode(500)
+#1 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/JsonResponse.php(44): Symfony\Component\HttpFoundation\Response->__construct('', 500, Array)
+#2 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/illuminate/http/JsonResponse.php(31): Symfony\Component\HttpFoundation\JsonResponse->__construct(Array, 500, Array)
+#3 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(132): Illuminate\Http\JsonResponse->__construct(Array, 500, Array, 192)
+#4 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/ in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php on line 453
+[06-May-2020 11:00:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Laravel\Lumen\Application::handleException() in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php:67
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(55): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}
+  thrown in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php on line 67
+[06-May-2020 11:43:39 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Symfony\Component\HttpFoundation\Response::setStatusCode() must be an instance of Symfony\Component\HttpFoundation\object, instance of Illuminate\Http\JsonResponse returned in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php:453
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php(201): Symfony\Component\HttpFoundation\Response->setStatusCode(500)
+#1 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/JsonResponse.php(44): Symfony\Component\HttpFoundation\Response->__construct('', 500, Array)
+#2 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/illuminate/http/JsonResponse.php(31): Symfony\Component\HttpFoundation\JsonResponse->__construct(Array, 500, Array)
+#3 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(132): Illuminate\Http\JsonResponse->__construct(Array, 500, Array, 192)
+#4 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/ in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php on line 453
+[06-May-2020 11:43:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Laravel\Lumen\Application::handleException() in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php:67
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(55): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}
+  thrown in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php on line 67
+[06-May-2020 11:43:40 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Symfony\Component\HttpFoundation\Response::setStatusCode() must be an instance of Symfony\Component\HttpFoundation\object, instance of Illuminate\Http\JsonResponse returned in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php:453
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php(201): Symfony\Component\HttpFoundation\Response->setStatusCode(500)
+#1 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/JsonResponse.php(44): Symfony\Component\HttpFoundation\Response->__construct('', 500, Array)
+#2 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/illuminate/http/JsonResponse.php(31): Symfony\Component\HttpFoundation\JsonResponse->__construct(Array, 500, Array)
+#3 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(132): Illuminate\Http\JsonResponse->__construct(Array, 500, Array, 192)
+#4 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/ in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php on line 453
+[06-May-2020 11:43:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Laravel\Lumen\Application::handleException() in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php:67
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(55): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}
+  thrown in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php on line 67
+[06-May-2020 11:43:40 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Symfony\Component\HttpFoundation\Response::setStatusCode() must be an instance of Symfony\Component\HttpFoundation\object, instance of Illuminate\Http\JsonResponse returned in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php:453
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php(201): Symfony\Component\HttpFoundation\Response->setStatusCode(500)
+#1 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/JsonResponse.php(44): Symfony\Component\HttpFoundation\Response->__construct('', 500, Array)
+#2 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/illuminate/http/JsonResponse.php(31): Symfony\Component\HttpFoundation\JsonResponse->__construct(Array, 500, Array)
+#3 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(132): Illuminate\Http\JsonResponse->__construct(Array, 500, Array, 192)
+#4 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/ in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php on line 453
+[06-May-2020 11:43:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Laravel\Lumen\Application::handleException() in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php:67
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(55): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}
+  thrown in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php on line 67
+[06-May-2020 11:44:03 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Symfony\Component\HttpFoundation\Response::setStatusCode() must be an instance of Symfony\Component\HttpFoundation\object, instance of Illuminate\Http\JsonResponse returned in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php:453
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php(201): Symfony\Component\HttpFoundation\Response->setStatusCode(500)
+#1 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/JsonResponse.php(44): Symfony\Component\HttpFoundation\Response->__construct('', 500, Array)
+#2 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/illuminate/http/JsonResponse.php(31): Symfony\Component\HttpFoundation\JsonResponse->__construct(Array, 500, Array)
+#3 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(132): Illuminate\Http\JsonResponse->__construct(Array, 500, Array, 192)
+#4 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/ in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php on line 453
+[06-May-2020 11:44:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Laravel\Lumen\Application::handleException() in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php:67
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(55): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}
+  thrown in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php on line 67
+[06-May-2020 11:44:13 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Symfony\Component\HttpFoundation\Response::setStatusCode() must be an instance of Symfony\Component\HttpFoundation\object, instance of Illuminate\Http\JsonResponse returned in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php:453
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php(201): Symfony\Component\HttpFoundation\Response->setStatusCode(500)
+#1 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/JsonResponse.php(44): Symfony\Component\HttpFoundation\Response->__construct('', 500, Array)
+#2 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/illuminate/http/JsonResponse.php(31): Symfony\Component\HttpFoundation\JsonResponse->__construct(Array, 500, Array)
+#3 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(132): Illuminate\Http\JsonResponse->__construct(Array, 500, Array, 192)
+#4 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/ in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php on line 453
+[06-May-2020 11:44:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Laravel\Lumen\Application::handleException() in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php:67
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(55): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}
+  thrown in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php on line 67
+[06-May-2020 11:44:21 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Symfony\Component\HttpFoundation\Response::setStatusCode() must be an instance of Symfony\Component\HttpFoundation\object, instance of Illuminate\Http\JsonResponse returned in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php:453
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php(201): Symfony\Component\HttpFoundation\Response->setStatusCode(500)
+#1 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/JsonResponse.php(44): Symfony\Component\HttpFoundation\Response->__construct('', 500, Array)
+#2 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/illuminate/http/JsonResponse.php(31): Symfony\Component\HttpFoundation\JsonResponse->__construct(Array, 500, Array)
+#3 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(132): Illuminate\Http\JsonResponse->__construct(Array, 500, Array, 192)
+#4 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/ in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php on line 453
+[06-May-2020 11:44:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Laravel\Lumen\Application::handleException() in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php:67
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(55): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}
+  thrown in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php on line 67
+[06-May-2020 11:44:43 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Symfony\Component\HttpFoundation\Response::setStatusCode() must be an instance of Symfony\Component\HttpFoundation\object, instance of Illuminate\Http\JsonResponse returned in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php:453
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php(201): Symfony\Component\HttpFoundation\Response->setStatusCode(500)
+#1 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/JsonResponse.php(44): Symfony\Component\HttpFoundation\Response->__construct('', 500, Array)
+#2 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/illuminate/http/JsonResponse.php(31): Symfony\Component\HttpFoundation\JsonResponse->__construct(Array, 500, Array)
+#3 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(132): Illuminate\Http\JsonResponse->__construct(Array, 500, Array, 192)
+#4 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/ in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php on line 453
+[06-May-2020 11:44:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Laravel\Lumen\Application::handleException() in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php:67
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(55): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}
+  thrown in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php on line 67
+[06-May-2020 11:44:44 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Symfony\Component\HttpFoundation\Response::setStatusCode() must be an instance of Symfony\Component\HttpFoundation\object, instance of Illuminate\Http\JsonResponse returned in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php:453
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php(201): Symfony\Component\HttpFoundation\Response->setStatusCode(500)
+#1 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/JsonResponse.php(44): Symfony\Component\HttpFoundation\Response->__construct('', 500, Array)
+#2 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/illuminate/http/JsonResponse.php(31): Symfony\Component\HttpFoundation\JsonResponse->__construct(Array, 500, Array)
+#3 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(132): Illuminate\Http\JsonResponse->__construct(Array, 500, Array, 192)
+#4 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/ in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php on line 453
+[06-May-2020 11:44:44 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Laravel\Lumen\Application::handleException() in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php:67
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(55): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}
+  thrown in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php on line 67
+[06-May-2020 11:44:44 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Symfony\Component\HttpFoundation\Response::setStatusCode() must be an instance of Symfony\Component\HttpFoundation\object, instance of Illuminate\Http\JsonResponse returned in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php:453
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php(201): Symfony\Component\HttpFoundation\Response->setStatusCode(500)
+#1 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/JsonResponse.php(44): Symfony\Component\HttpFoundation\Response->__construct('', 500, Array)
+#2 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/illuminate/http/JsonResponse.php(31): Symfony\Component\HttpFoundation\JsonResponse->__construct(Array, 500, Array)
+#3 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(132): Illuminate\Http\JsonResponse->__construct(Array, 500, Array, 192)
+#4 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/ in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php on line 453
+[06-May-2020 11:44:44 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Laravel\Lumen\Application::handleException() in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php:67
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(55): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}
+  thrown in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php on line 67
+[06-May-2020 11:49:15 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Symfony\Component\HttpFoundation\Response::setStatusCode() must be an instance of Symfony\Component\HttpFoundation\object, instance of Illuminate\Http\JsonResponse returned in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php:453
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php(201): Symfony\Component\HttpFoundation\Response->setStatusCode(500)
+#1 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/JsonResponse.php(44): Symfony\Component\HttpFoundation\Response->__construct('', 500, Array)
+#2 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/illuminate/http/JsonResponse.php(31): Symfony\Component\HttpFoundation\JsonResponse->__construct(Array, 500, Array)
+#3 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(132): Illuminate\Http\JsonResponse->__construct(Array, 500, Array, 192)
+#4 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/ in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php on line 453
+[06-May-2020 11:49:15 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Laravel\Lumen\Application::handleException() in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php:67
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(55): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}
+  thrown in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php on line 67
+[06-May-2020 12:26:05 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Symfony\Component\HttpFoundation\Response::setStatusCode() must be an instance of Symfony\Component\HttpFoundation\object, instance of Illuminate\Http\JsonResponse returned in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php:453
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php(201): Symfony\Component\HttpFoundation\Response->setStatusCode(500)
+#1 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/JsonResponse.php(44): Symfony\Component\HttpFoundation\Response->__construct('', 500, Array)
+#2 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/illuminate/http/JsonResponse.php(31): Symfony\Component\HttpFoundation\JsonResponse->__construct(Array, 500, Array)
+#3 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(132): Illuminate\Http\JsonResponse->__construct(Array, 500, Array, 192)
+#4 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/ in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/http-foundation/Response.php on line 453
+[06-May-2020 12:26:05 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Laravel\Lumen\Application::handleException() in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php:67
+Stack trace:
+#0 /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(55): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}
+  thrown in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php on line 67
+[06-May-2020 12:27:46 UTC] PHP Fatal error:  Declaration of Symfony\Component\Translation\TranslatorInterface::setLocale($locale) must be compatible with Symfony\Contracts\Translation\LocaleAwareInterface::setLocale(string $locale) in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/translation/TranslatorInterface.php on line 24
+[06-May-2020 12:27:59 UTC] PHP Fatal error:  Declaration of Symfony\Component\Translation\TranslatorInterface::setLocale($locale) must be compatible with Symfony\Contracts\Translation\LocaleAwareInterface::setLocale(string $locale) in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/translation/TranslatorInterface.php on line 24
+[06-May-2020 12:28:37 UTC] PHP Fatal error:  Declaration of Symfony\Component\Translation\TranslatorInterface::setLocale($locale) must be compatible with Symfony\Contracts\Translation\LocaleAwareInterface::setLocale(string $locale) in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/translation/TranslatorInterface.php on line 24
+[06-May-2020 12:30:07 UTC] PHP Fatal error:  Declaration of Symfony\Component\Translation\TranslatorInterface::setLocale($locale) must be compatible with Symfony\Contracts\Translation\LocaleAwareInterface::setLocale(string $locale) in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/translation/TranslatorInterface.php on line 24
+[06-May-2020 12:30:08 UTC] PHP Fatal error:  Declaration of Symfony\Component\Translation\TranslatorInterface::setLocale($locale) must be compatible with Symfony\Contracts\Translation\LocaleAwareInterface::setLocale(string $locale) in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/translation/TranslatorInterface.php on line 24
+[06-May-2020 12:30:20 UTC] PHP Fatal error:  Declaration of Symfony\Component\Translation\TranslatorInterface::setLocale($locale) must be compatible with Symfony\Contracts\Translation\LocaleAwareInterface::setLocale(string $locale) in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/translation/TranslatorInterface.php on line 24
+[06-May-2020 12:33:33 UTC] PHP Fatal error:  Declaration of Symfony\Component\Translation\TranslatorInterface::setLocale($locale) must be compatible with Symfony\Contracts\Translation\LocaleAwareInterface::setLocale(string $locale) in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/translation/TranslatorInterface.php on line 24
+[06-May-2020 12:34:04 UTC] PHP Fatal error:  Declaration of Symfony\Component\Translation\TranslatorInterface::setLocale($locale) must be compatible with Symfony\Contracts\Translation\LocaleAwareInterface::setLocale(string $locale) in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/translation/TranslatorInterface.php on line 24
+[06-May-2020 12:40:26 UTC] PHP Fatal error:  Declaration of Symfony\Component\Translation\TranslatorInterface::setLocale($locale) must be compatible with Symfony\Contracts\Translation\LocaleAwareInterface::setLocale(string $locale) in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/translation/TranslatorInterface.php on line 24
+[06-May-2020 12:42:27 UTC] PHP Fatal error:  Declaration of Symfony\Component\Translation\TranslatorInterface::setLocale($locale) must be compatible with Symfony\Contracts\Translation\LocaleAwareInterface::setLocale(string $locale) in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/translation/TranslatorInterface.php on line 24
+[06-May-2020 12:43:12 UTC] PHP Fatal error:  Declaration of Symfony\Component\Translation\TranslatorInterface::setLocale($locale) must be compatible with Symfony\Contracts\Translation\LocaleAwareInterface::setLocale(string $locale) in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/translation/TranslatorInterface.php on line 24
+[06-May-2020 12:43:25 UTC] PHP Fatal error:  Declaration of Symfony\Component\Translation\TranslatorInterface::setLocale($locale) must be compatible with Symfony\Contracts\Translation\LocaleAwareInterface::setLocale(string $locale) in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/translation/TranslatorInterface.php on line 24
+[06-May-2020 12:43:30 UTC] PHP Fatal error:  Declaration of Symfony\Component\Translation\TranslatorInterface::setLocale($locale) must be compatible with Symfony\Contracts\Translation\LocaleAwareInterface::setLocale(string $locale) in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/translation/TranslatorInterface.php on line 24
+[06-May-2020 12:43:32 UTC] PHP Fatal error:  Declaration of Symfony\Component\Translation\TranslatorInterface::setLocale($locale) must be compatible with Symfony\Contracts\Translation\LocaleAwareInterface::setLocale(string $locale) in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/translation/TranslatorInterface.php on line 24
+[06-May-2020 12:43:35 UTC] PHP Fatal error:  Declaration of Symfony\Component\Translation\TranslatorInterface::setLocale($locale) must be compatible with Symfony\Contracts\Translation\LocaleAwareInterface::setLocale(string $locale) in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/translation/TranslatorInterface.php on line 24
+[06-May-2020 12:47:02 UTC] PHP Fatal error:  Declaration of Symfony\Component\Translation\TranslatorInterface::setLocale($locale) must be compatible with Symfony\Contracts\Translation\LocaleAwareInterface::setLocale(string $locale) in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/translation/TranslatorInterface.php on line 24
+[06-May-2020 12:47:04 UTC] PHP Fatal error:  Declaration of Symfony\Component\Translation\TranslatorInterface::setLocale($locale) must be compatible with Symfony\Contracts\Translation\LocaleAwareInterface::setLocale(string $locale) in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/translation/TranslatorInterface.php on line 24
+[06-May-2020 12:47:48 UTC] PHP Fatal error:  Declaration of Symfony\Component\Translation\TranslatorInterface::setLocale($locale) must be compatible with Symfony\Contracts\Translation\LocaleAwareInterface::setLocale(string $locale) in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/translation/TranslatorInterface.php on line 24
+[06-May-2020 12:47:50 UTC] PHP Fatal error:  Declaration of Symfony\Component\Translation\TranslatorInterface::setLocale($locale) must be compatible with Symfony\Contracts\Translation\LocaleAwareInterface::setLocale(string $locale) in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/translation/TranslatorInterface.php on line 24
+[06-May-2020 12:48:08 UTC] PHP Fatal error:  Declaration of Symfony\Component\Translation\TranslatorInterface::setLocale($locale) must be compatible with Symfony\Contracts\Translation\LocaleAwareInterface::setLocale(string $locale) in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/translation/TranslatorInterface.php on line 24
+[06-May-2020 12:48:10 UTC] PHP Fatal error:  Declaration of Symfony\Component\Translation\TranslatorInterface::setLocale($locale) must be compatible with Symfony\Contracts\Translation\LocaleAwareInterface::setLocale(string $locale) in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/translation/TranslatorInterface.php on line 24
+[06-May-2020 12:48:11 UTC] PHP Fatal error:  Declaration of Symfony\Component\Translation\TranslatorInterface::setLocale($locale) must be compatible with Symfony\Contracts\Translation\LocaleAwareInterface::setLocale(string $locale) in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/translation/TranslatorInterface.php on line 24
+[06-May-2020 12:48:13 UTC] PHP Fatal error:  Declaration of Symfony\Component\Translation\TranslatorInterface::setLocale($locale) must be compatible with Symfony\Contracts\Translation\LocaleAwareInterface::setLocale(string $locale) in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/translation/TranslatorInterface.php on line 24
+[06-May-2020 15:10:43 UTC] PHP Fatal error:  Declaration of Symfony\Component\Translation\TranslatorInterface::setLocale($locale) must be compatible with Symfony\Contracts\Translation\LocaleAwareInterface::setLocale(string $locale) in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/translation/TranslatorInterface.php on line 24
+[06-May-2020 15:10:46 UTC] PHP Fatal error:  Declaration of Symfony\Component\Translation\TranslatorInterface::setLocale($locale) must be compatible with Symfony\Contracts\Translation\LocaleAwareInterface::setLocale(string $locale) in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/translation/TranslatorInterface.php on line 24
+[06-May-2020 15:10:50 UTC] PHP Fatal error:  Declaration of Symfony\Component\Translation\TranslatorInterface::setLocale($locale) must be compatible with Symfony\Contracts\Translation\LocaleAwareInterface::setLocale(string $locale) in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/translation/TranslatorInterface.php on line 24
+[06-May-2020 15:11:55 UTC] PHP Fatal error:  Declaration of Symfony\Component\Translation\TranslatorInterface::setLocale($locale) must be compatible with Symfony\Contracts\Translation\LocaleAwareInterface::setLocale(string $locale) in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/translation/TranslatorInterface.php on line 24
+[06-May-2020 15:11:58 UTC] PHP Fatal error:  Declaration of Symfony\Component\Translation\TranslatorInterface::setLocale($locale) must be compatible with Symfony\Contracts\Translation\LocaleAwareInterface::setLocale(string $locale) in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/translation/TranslatorInterface.php on line 24
+[06-May-2020 15:11:59 UTC] PHP Fatal error:  Declaration of Symfony\Component\Translation\TranslatorInterface::setLocale($locale) must be compatible with Symfony\Contracts\Translation\LocaleAwareInterface::setLocale(string $locale) in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/translation/TranslatorInterface.php on line 24
+[06-May-2020 15:11:59 UTC] PHP Fatal error:  Declaration of Symfony\Component\Translation\TranslatorInterface::setLocale($locale) must be compatible with Symfony\Contracts\Translation\LocaleAwareInterface::setLocale(string $locale) in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/translation/TranslatorInterface.php on line 24
+[06-May-2020 15:12:01 UTC] PHP Fatal error:  Declaration of Symfony\Component\Translation\TranslatorInterface::setLocale($locale) must be compatible with Symfony\Contracts\Translation\LocaleAwareInterface::setLocale(string $locale) in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/translation/TranslatorInterface.php on line 24
+[06-May-2020 15:12:24 UTC] PHP Fatal error:  Declaration of Symfony\Component\Translation\TranslatorInterface::setLocale($locale) must be compatible with Symfony\Contracts\Translation\LocaleAwareInterface::setLocale(string $locale) in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/translation/TranslatorInterface.php on line 24
+[06-May-2020 15:12:32 UTC] PHP Fatal error:  Declaration of Symfony\Component\Translation\TranslatorInterface::setLocale($locale) must be compatible with Symfony\Contracts\Translation\LocaleAwareInterface::setLocale(string $locale) in /home1/wwwverte/jpapi.vertexwebsurf.com/vendor/symfony/translation/TranslatorInterface.php on line 24
