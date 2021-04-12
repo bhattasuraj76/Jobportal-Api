@@ -17,7 +17,7 @@ class EmployerTableSeeder extends Seeder
     public function run()
     {
 
-        Admin::create(['email' => 'admin@test.com', 'password' => Hash::make('12345'),]);
+        Admin::create(['email' => 'admin@test.com', 'password' => Hash::make('12345')]);
 
         factory(Jobseeker::class, 2)->create();
 

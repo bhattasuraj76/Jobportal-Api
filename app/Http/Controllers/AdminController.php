@@ -50,24 +50,24 @@ class AdminController extends Controller
     {
         $jobseeker = Jobseeker::where('id', $jobApplicantId)->first();
         if($jobseeker->status == "active"){
-            $jobseeker->update(['status', 'suspended']);
+            $jobseeker->update(['status' => 'suspended']);
         }else{
-            $jobseeker->update(['status', 'active']);
+            $jobseeker->update(['status' => 'active']);
         }
         
-        return response()->json(['resp' => 1]);
+        return response()->json(['resp' => 1, 'status' => $jobseeker->status]);
     }
 
     public function changeEmployerStatus(Request $request, $employerId)
     {
         $employer = Employer::where('id', $employerId)->first();
         if ($employer->status == "active") {
-            $employer->update(['status', 'suspended']);
+            $employer->update(['status' => 'suspended']);
         } else {
-            $employer->update(['status', 'active']);
+            $employer->update(['status' => 'active']);
         }
 
-        return response()->json(['resp' => 1]);
+        return response()->json(['resp' => 1, 'status' => $employer->status]);
     }
 
 }
