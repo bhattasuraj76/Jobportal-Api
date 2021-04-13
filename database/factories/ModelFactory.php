@@ -39,10 +39,10 @@ $factory->define(Job::class, function (Faker $faker) use ($locations) {
         'type' => 'Full Time',
         'level' => 'Senior Level',
         'description' => "lorem ipsum",
-        'location' => $locations[rand(0,2)],
+        'location' => "Kathmandu",
         "qualification" => "Bachelors in IT",
         "experience" => '2-3 years',
-        "salary" => 'Rs. 70,000',
+        "salary" => '70,000',
         'expiry_date' => "2021-05-27"
     ];
 });

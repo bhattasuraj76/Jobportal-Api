@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Job extends Model
 {
     protected $table = 'jobs';
-    protected $fillable = ['employer_id', 'title', 'slug', 'category', 'type', 'level', 'experience', 'qualification', 'description', 'salary', 'expiry_date', 'status'];
+    protected $fillable = ['employer_id', 'title', 'slug', 'category', 'type', 'level', 'experience', 'qualification', 'description', 'salary', 'location', 'expiry_date', 'status'];
 
     protected $dates = ['expiry_date'];
     // protected $dateFormat = 'Y-m-d';
