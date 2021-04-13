@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Models\Job;
 use App\Models\Jobseeker;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -18,7 +19,8 @@ class JobseekerController extends Controller
     public function index(Request $request)
     {
         $jobseeker = Auth::user();
-        $data['jobs'] = $jobseeker->jobs()->where('status', 1)->get();
+        $jobsId = $jobseeker->jobs()->pluck('jobs.id')->toArray();
+        $data['jobs'] = Job::with('employer')->whereIn('id', $jobsId)->where('status', 1)->get();
         $data['profile'] = $jobseeker->profile;
         return response()->json(['resp' => 1, 'result' => $data]);
     }
