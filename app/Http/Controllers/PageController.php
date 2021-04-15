@@ -15,7 +15,7 @@ class PageController extends Controller
     public function __construct(Job $job)
     {
         $this->model = $job;
-        $this->paginate = 5;
+        $this->paginate = 8;
     }
 
     public function home(Request $request)
@@ -99,8 +99,6 @@ class PageController extends Controller
         return response()->json(['resp' => 1, 'job' => $job]);
     }
 
-
-
     public function applyForJob(Request $request)
     {
         $job = Job::find($request->job_id);
@@ -126,19 +124,26 @@ class PageController extends Controller
             ->where('status', 1)
             ->whereDate('expiry_date', '>', date('Y-m-d'));
 
-        if ($request->has('keyword') && !empty($request->keyword)) {
-            $query->where('title', 'like', '%' . trim($request->keyword) . '%');
-        }
-
         // if ($request->has('keyword') && !empty($request->keyword)) {
-        //     $wordsArr = explode(" ", trim($request->keyword));
-        //     if(count($wordsArr) > 0){
-        //         for ($i = 0; $i < count($wordsArr); $i++) {
-        //             $query->orWhere('title', 'like', '%' . $wordsArr[$i] . '%');
-        //         }
-        //     } 
-
+        //     $query->where('title', 'like', '%' . trim($request->keyword) . '%');
         // }
+
+        if ($request->has('keyword') && !empty($request->keyword)) {
+            $wordsArr = explode(" ", trim($request->keyword));
+
+            if(count($wordsArr) > 0){
+                $query->where(function(Builder $query) use ($wordsArr) {
+                    for ($i = 0; $i < count($wordsArr); $i++) {
+                        if($i== 0){
+                            $query->where('title', 'like', '%' . $wordsArr[$i] . '%');
+                        }else{
+                            $query->orWhere('title', 'like', '%' . $wordsArr[$i] . '%');
+                        }
+                    }
+                });
+            } 
+
+        }
 
         if ($request->has('category') && !empty($request->category)) {
             $query->whereIn('category', $request->category);
