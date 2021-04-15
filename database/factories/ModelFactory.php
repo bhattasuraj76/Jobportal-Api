@@ -25,13 +25,13 @@ $factory->define(Employer::class, function (Faker $faker) {
     return [
         'name'     => "ABC Company",
         'address'  => "Thamel, Kathmandu",
-        'email'    => $faker->unique()->email,
+        'email'    => 'employer@test.com',
         'phone'    =>  "+977-01692284",
         'password' => Hash::make('12345'),
     ];
 });
 
-$factory->define(Job::class, function (Faker $faker) use ($locations) {
+$factory->define(Job::class, function (Faker $faker) {
     return [
         'title'     => "Web Developer",
         'slug' => $faker->unique()->randomNumber(5),
@@ -42,8 +42,8 @@ $factory->define(Job::class, function (Faker $faker) use ($locations) {
         'location' => "Kathmandu",
         "qualification" => "Bachelors in IT",
         "experience" => '2-3 years',
-        "salary" => '70,000',
-        'expiry_date' => "2021-05-27"
+        "salary" => '70000',
+        'expiry_date' => '2021-05-05'
     ];
 });
 
@@ -52,7 +52,7 @@ $factory->define(Jobseeker::class, function (Faker $faker) {
     return [
         'first_name'     => $faker->firstName,
         'last_name'     => $faker->lastName,
-        'email'    => $faker->unique()->email,
+        'email'    => 'jobseeker@test.com',
         'password' => Hash::make('12345'),
         "gender" => "male",
         'phone' => '977-9860536208',

@@ -45,8 +45,8 @@ class EmployerController extends Controller
         $this->validate($request, [
             'name' => 'required',
             'address' => 'required',
-            'logo' => 'max:1000|mimes:jpg,png',
-            'cover' => 'max:1000|mimes:jpg,png'
+            'logo' => 'max:1000|mimes:jpg,jpeg,png',
+            'cover' => 'max:1000|mimes:jpg,jpeg,png'
         ]);
 
         $attributes = $request->all();
@@ -128,6 +128,28 @@ class EmployerController extends Controller
         }
     }
 
+    public function updateJob(Request $request, $id)
+    {
+        $this->validate($request, [
+            'title' => 'required',
+            'expiry_date' => 'required|date',
+            'category' => 'required'
+        ]);
+
+        $attributes = $request->all();
+
+        $job = Job::where('id', $id)->first();
+        if (empty($job)) {
+            return response()->json(['resp' => 0, 'message' => 'Data not found']);
+        }
+
+        $job->update($attributes);
+
+        $employer = Auth::user();
+        $jobs = $employer->jobs()->where('status', true)->get();
+        return response()->json(['resp' => 1, 'message' => 'Successfully updated', 'jobs' => $jobs]);
+    }
+
     public function destroyJob($id)
     {
         $job = Job::find($id);
@@ -135,6 +157,30 @@ class EmployerController extends Controller
             return response()->json(['resp' => 1]);
         } else {
             return response()->json(['resp' => 0]);
+        }
+    }
+
+    public function isAccountSuspended(Request $request)
+    {
+        $employer = Auth::user();
+        if ($employer->status == "suspended") {
+            return response()->json(['resp' => 1]);
+        }
+        return response()->json(['resp' => 0]);
+    }
+
+    public function handleRequestToActivateAccount(Request $request)
+    {
+        $data = Auth::user();
+        if ($data->status == "active") {
+            return response()->json(['resp' => 0]);
+        }
+
+        if ($data->request_to_activate == false) {
+            $data->update(["request_to_activate" => true]);
+            return response()->json(['resp' => 1, 'message' => "Activation request send."]);
+        } else {
+            return response()->json(['resp' => 1, 'message' => "Activation request already sent."]);
         }
     }
 }

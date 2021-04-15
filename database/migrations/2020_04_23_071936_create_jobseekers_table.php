@@ -27,6 +27,7 @@ class CreateJobseekersTable extends Migration
             $table->text('description')->nullable();
             $table->string('api_key')->nullable()->unique();
             $table->string('status')->default('active');
+            $table->boolean('request_to_activate')->default(false);
             $table->rememberToken();
             $table->timestamps();
         });

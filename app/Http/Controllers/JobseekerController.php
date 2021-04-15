@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use App\Models\Job;
 use App\Models\Jobseeker;
+use App\Models\JobseekerJob;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -72,26 +73,70 @@ class JobseekerController extends Controller
     {
         try {
             //check if email is present
-            if(!$request->has('email')) throw new \Exception('No Email');
+            if (!$request->has('email')) throw new \Exception('No Email');
 
             $jobseeker = Jobseeker::where('email', $request->email)->first();
             //check if user exist
-            if (empty($jobseeker) ) throw new \Exception('User Not Found');
+            if (empty($jobseeker)) throw new \Exception('User Not Found');
 
             //check if user has cv
             if (empty($jobseeker->cv))  throw new \Exception('User Not Found');
 
-             //check if file exist and is file
+            //check if file exist and is file
             $file = base_path() . '/public/jobseeker/cv/' . $jobseeker->rawcv;
-            if(!file_exists($file) || ! is_file($file)){
+            if (!file_exists($file) || !is_file($file)) {
                 throw new \Exception('File Not Found');
             }
 
             //download file 
             return response()->download($file, $jobseeker->email . ".pdf", ['content-type' => "application/pdf"]);
-
         } catch (\Exception $e) {
             return response()->json(["resp" => 0, "message" => $e->getMessage()]);
+        }
+    }
+
+    public function hasJobseekerAppliedForJob(Request $request, $slug)
+    {
+        $jobseeker = Auth::user();
+        $job = Job::where('slug', $slug)->first();
+        $jobsId = $jobseeker->jobs()->pluck('jobs.id')->toArray();
+        if (in_array($job->id, $jobsId)) {
+            return response()->json(['resp' => 1]);
+        }
+        return response()->json(['resp' => 0]);
+    }
+
+    public function removeFromAppliedJobs(Request $request, $jobId)
+    {
+        $jobseeker = Auth::user();
+        $data = JobseekerJob::where([['job_id', $jobId], ['jobseeker_id', $jobseeker->id]])->first();
+        if ($data) {
+            $data->delete();
+        }
+        return response()->json(['resp' => 1]);
+    }
+
+    public function isAccountSuspended(Request $request)
+    {
+        $jobseeker = Auth::user();
+        if ($jobseeker->status == "suspended") {
+            return response()->json(['resp' => 1]);
+        }
+        return response()->json(['resp' => 0]);
+    }
+
+    public function handleRequestToActivateAccount(Request $request)
+    {
+        $jobseeker = Auth::user();
+        if ($jobseeker->status == "active") {
+            return response()->json(['resp' => 0]);
+        }
+
+        if ($jobseeker->request_to_activate == false) {
+            $jobseeker->update(["request_to_activate" => true]);
+            return response()->json(['resp' => 1, 'message' => "Activation request send."]);
+        } else {
+            return response()->json(['resp' => 1, 'message' => "Activation request already sent."]);
         }
     }
 }

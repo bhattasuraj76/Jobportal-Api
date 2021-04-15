@@ -32,13 +32,22 @@ $router->group(['prefix' => 'api'], function ($router) {
     $router->get('employer/view-posted-jobs', 'EmployerController@viewPostedJobs');
     $router->get('employer/view-job-applicants', 'EmployerController@viewJobApplicants');
     $router->post('employer/post-new-job', 'EmployerController@createJob');
+    $router->post('employer/update-job/{id}', 'EmployerController@updateJob');
     $router->delete('employer/delete-job/{id}', 'EmployerController@destroyJob');
+
+    $router->post('/check-if-employer-account-is-suspended', 'EmployerController@isAccountSuspended');
+    $router->post('/request-to-activate-employer-account', 'EmployerController@handleRequestToActivateAccount');
 
     //jobseeker routes
     $router->get('/jobseeker', 'JobseekerController@index');
     $router->get('/jobseeker/edit-profile', 'JobseekerController@show');
     $router->post('/jobseeker/edit-profile', 'JobseekerController@update');
-    $router->post('/downloadCV', 'JobseekerController@downloadCV');
+
+    $router->post('/apply-for-job', 'PageController@applyForJob');
+    $router->post('/remove-from-applied-jobs/{id}', 'JobseekerController@removeFromAppliedJobs');
+    $router->post('/check-if-jobseeker-applied-for-job/{slug}', 'JobseekerController@hasJobseekerAppliedForJob');
+    $router->post('/check-if-jobseeker-account-is-suspended', 'JobseekerController@isAccountSuspended');
+    $router->post('/request-to-activate-jobseeker-account', 'JobseekerController@handleRequestToActivateAccount');
 
     //admin routes
     $router->get('/admin', 'AdminController@index');
@@ -50,9 +59,8 @@ $router->group(['prefix' => 'api'], function ($router) {
     // page routes
     $router->get('/home', 'PageController@home');
     $router->get('/mobile-app-home', 'PageController@mobileAppHome');
-    $router->post('/apply-for-job', 'PageController@applyForJob');
     $router->get('/job/{slug}', 'PageController@viewJob');
     $router->post('/search', 'PageController@filterJobs');
     $router->post('/mobile-search', 'PageController@filterJobs');
-    
+    $router->post('/downloadCV', 'JobseekerController@downloadCV');
 });

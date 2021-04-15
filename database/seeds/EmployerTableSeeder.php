@@ -19,7 +19,7 @@ class EmployerTableSeeder extends Seeder
 
         Admin::create(['email' => 'admin@test.com', 'password' => Hash::make('12345')]);
 
-        factory(Jobseeker::class, 2)->create();
+        factory(Jobseeker::class, 1)->create();
 
         // factory(Job::class, 15)
         //     ->create()
@@ -31,10 +31,10 @@ class EmployerTableSeeder extends Seeder
         //         $job->jobseekers()->saveMany($jobseekers);
         //     });
 
-        factory(Employer::class, 2)
+        factory(Employer::class, 1)
             ->create()
             ->each(function ($employer) {
-                for ($i = 0; $i < 10; $i++) {
+                for ($i = 0; $i < 20; $i++) {
                     $employer->jobs()
                         ->save(factory(Job::class)->make());
                         // ->each(function ($job) {

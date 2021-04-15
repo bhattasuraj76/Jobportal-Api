@@ -11,7 +11,7 @@ class Jobseeker extends Model implements Authenticatable
     use AuthenticableTrait;
 
     protected $table = 'jobseekers';
-    protected $fillable = ['email', 'password', 'first_name',  'last_name', 'gender', 'address', 'phone', 'profile', 'cv', 'description', 'api_key', 'status'];
+    protected $fillable = ['email', 'password', 'first_name',  'last_name', 'gender', 'address', 'phone', 'profile', 'cv', 'description', 'api_key', 'status', 'request_to_activate'];
     protected $hidden = [
         'password'
     ];

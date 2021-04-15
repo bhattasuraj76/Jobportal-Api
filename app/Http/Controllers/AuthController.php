@@ -34,12 +34,12 @@ class AuthController extends Controller
         try {
             //get user
             $user = null;
-            switch($request->entity){
+            switch ($request->entity) {
                 case "jobseeker":
-                      $user = Jobseeker::where('email', $request->input('email'))->where('status', 'active')->first() ;
-                        break;
+                    $user = Jobseeker::where('email', $request->input('email'))->first();
+                    break;
                 case "employer":
-                    $user =  Employer::where('email', $request->input('email'))->where('status', 'active')->first();
+                    $user =  Employer::where('email', $request->input('email'))->first();
                     break;
                 case "admin":
                     $user = Admin::where('email', $request->input('email'))->first();
