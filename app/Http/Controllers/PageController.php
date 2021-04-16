@@ -200,7 +200,16 @@ class PageController extends Controller
         if ($now >= $date) {
             return null;
         }
-        return $date->diff($now)->format("%d days from now");
+
+        if ($date->diff($now)->format("%d") == 0) {
+            return $date->diff($now)->format("%h hours and %i minutes from now");
+        }
+
+        if ($date->diff($now)->format("%m") == 0) {
+            return $date->diff($now)->format("%d days from now");
+        }
+
+        return $date->diff($now)->format(" %m months %d days from now");
         // return $date->diff($now)->format(" %m months %d days from now");
     }
 
@@ -214,10 +223,14 @@ class PageController extends Controller
         // }
 
         if ($date->diff($now)->format("%d") == 0) {
-            return $date->diff($now)->format("%i minutes ago");
+            return $date->diff($now)->format("%h hours and %i minutes ago");
         }
-        return $date->diff($now)->format("%d days ago");
-        // return $date->diff($now)->format(" %m months %d days from now");
+
+        if ($date->diff($now)->format("%m") == 0) {
+            return $date->diff($now)->format("%d days ago");
+        }
+       
+        return $date->diff($now)->format(" %m months %d days from now");
     }
 
     public function getExpiryDayAttribute($value)
