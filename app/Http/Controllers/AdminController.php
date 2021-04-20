@@ -24,8 +24,12 @@ class AdminController extends Controller
     {
         $jobApplicantsCount = Jobseeker::get()->count();
         $employersCount = Employer::get()->count();
+        $reqToActivateApplicantsCount = Jobseeker::where('request_to_activate', true)->get()->count();
+        $reqToActivateEmployersCount = Employer::where('request_to_activate', true)->get()->count();
         $data['total_jobseekers'] = $jobApplicantsCount;
         $data['total_employers'] = $employersCount;
+        $data['req_activate_jobseekers'] = $reqToActivateApplicantsCount;
+        $data['req_activate_employers'] = $reqToActivateEmployersCount;
         return response()->json(['resp' => 1, 'result' => $data]);
     }
 

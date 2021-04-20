@@ -222,6 +222,10 @@ class PageController extends Controller
         //     return null;
         // }
 
+        if ($date->diff($now)->format("%h") == 0) {
+            return $date->diff($now)->format("%i minutes ago");
+        }
+
         if ($date->diff($now)->format("%d") == 0) {
             return $date->diff($now)->format("%h hours and %i minutes ago");
         }
